@@ -7,7 +7,7 @@ class Scraper
   attr_reader :get_page 
   
   def get_page
-    Nokogiri::HTML(html)
+   doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
   end 
     
   
