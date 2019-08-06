@@ -4,9 +4,10 @@ require 'open-uri'
 require_relative './course.rb'
 
 class Scraper
+  attr_reader :get_page 
   
   def get_page
-    Nokogiri::HTML
+    Nokogiri::HTML::Document 
   end 
     
   
