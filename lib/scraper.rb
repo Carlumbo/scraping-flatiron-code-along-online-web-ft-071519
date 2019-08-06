@@ -7,7 +7,7 @@ class Scraper
   attr_reader :get_page 
   
   def get_page
-    Nokogiri::HTML::Document 
+    Nokogiri::HTML(html)
   end 
     
   
